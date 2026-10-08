@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainLog — Privacy Policy & Terms</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --border: #334155;
+      --accent: #f59e0b;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #0284c7;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 0.9rem;
+      color: var(--text);
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .alert-box {
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      margin: 1.25rem 0;
+      border-radius: 0 8px 8px 0;
+      color: #fef3c7;
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    code {
+      background: #0f172a;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BrainLog</h1>
+      <p class="subtitle">Open-source voice notes prototype for Android</p>
+      <span class="badge">Privacy Policy &amp; Terms</span>
+      <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted);">
+        Effective Date: March 2025
+      </p>
+    </header>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>
+        <strong>BrainLog</strong> is an open-source, non-commercial voice notes application built with privacy and offline reliability as its core design. We respect your privacy and believe your voice notes belong entirely to you.
+      </p>
+
+      <h3>1. Data Collection &amp; Storage</h3>
+      <p>
+        <strong>BrainLog does not collect, sell, or share your personal data or audio recordings.</strong>
+      </p>
+      <ul>
+        <li><strong>On-Device Storage:</strong> By default, all voice recordings created with BrainLog are stored exclusively on your device's local private storage. The app operates completely offline.</li>
+        <li><strong>Future User-Configured Backends:</strong> Future versions of the application may offer optional capabilities allowing you to transmit recordings to a server (for example, for personal cloud backup or remote transcription). Any such functionality will be:
+          <ul>
+            <li><strong>Strictly opt-in:</strong> Disabled by default unless explicitly enabled by you.</li>
+            <li><strong>User-controlled:</strong> Directed exclusively to backend services, endpoints, or self-hosted servers chosen, configured, and managed by you. BrainLog does not operate proprietary backend servers to collect or harvest your audio.</li>
+          </ul>
+        </li>
+        <li><strong>No Analytics or Tracking:</strong> The application does not embed any tracking SDKs, analytics frameworks, advertising trackers, or device fingerprinting tools.</li>
+        <li><strong>Standard Store Telemetry:</strong> If installed via Google Play, Google may collect anonymized system diagnostics (e.g., crash stack traces and basic device metadata) as governed by Google's own Privacy Policy.</li>
+      </ul>
+
+      <h3>2. Device Permissions Used</h3>
+      <p>To function as a voice recorder, BrainLog requests the following permissions:</p>
+      <ul>
+        <li><code>RECORD_AUDIO</code>: Needed to capture audio through your device's microphone or connected headset.</li>
+        <li><code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_MICROPHONE</code>: Required so capture can safely continue even if the screen is locked or you navigate away from the app. A persistent notification is displayed whenever recording is active.</li>
+        <li><code>POST_NOTIFICATIONS</code>: Required on Android 13+ to display the ongoing recording notification and controls.</li>
+        <li><code>BLUETOOTH_CONNECT</code>: Used on Android 12+ solely to discover and display the friendly name of connected Bluetooth headsets for input routing.</li>
+        <li><code>MODIFY_AUDIO_SETTINGS</code>: Used to adjust communication audio routing for headset recording.</li>
+      </ul>
+
+      <h3>3. Data Retention and Deletion</h3>
+      <p>
+        You have complete control over your data. Audio files can be deleted one-by-one from within the app. Uninstalling the app permanently erases all recordings stored in the app's local storage.
+      </p>
+    </section>
+
+    <section id="disclaimer">
+      <h2>Disclaimer of Warranty &amp; Limitation of Liability</h2>
+      <div class="alert-box">
+        <strong>Prototype / Testing Notice:</strong> BrainLog is a prototype developed and provided for evaluation and testing purposes.
+      </div>
+      <p>
+        THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+      </p>
+      <p>
+        IN NO EVENT SHALL THE DEVELOPER OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF DATA, CORRUPTED AUDIO, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+      </p>
+      <p>
+        The app is completely free of charge. Use of this application is at your own discretion and risk.
+      </p>
+    </section>
+
+    <section id="license">
+      <h2>Open Source</h2>
+      <p>
+        BrainLog source code is released under the <strong>MIT License</strong>. You can review, modify, and inspect the entire codebase on GitHub.
+      </p>
+    </section>
+
+    <footer>
+      <p>BrainLog &bull; Built with Jetpack Compose &bull; Free &amp; Open Source</p>
+    </footer>
+  </div>
+</body>
+</html>
